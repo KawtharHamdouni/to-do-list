@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.todo-container {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+li .checkbox-container {
+  width: 20%;
+}
+
+li input[type="checkbox"] {
+  width: 10px;
+}
+
+li .task-text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+li span {
+  flex: 1; 
+  text-align: left; 
+  margin-left: 40px; 
+}
+
+li button {
+  margin-left: auto;
+  background-color: #dc3545;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
